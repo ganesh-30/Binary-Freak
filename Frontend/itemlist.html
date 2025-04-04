@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Self Checkout - Add Items</title>
+  <link rel="stylesheet" href="itemlist.css" />
+</head>
+<body>
+  <nav>
+    <div class="nav-title">Self Checkout</div>
+    <div class="nav-actions">
+      <button onclick="window.location.reload()">Restart</button>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h2>Add Items</h2>
+    <div class="item-list" id="item-list">
+      <!-- Items will be added dynamically via JS -->
+    </div>
+
+    <div class="info-buttons">
+      <button id="total-items">No of Items - _</button>
+      <button id="total-amount">Total - ₹ 00</button>
+    </div>
+
+    <button class="confirm-btn" onclick="window.location.href='billing.html'">Confirm Payment</button>
+    <button class="back-btn" onclick="history.back()">Go Back</button>
+  </div>
+
+  <script src="itemlist.js"></script>
+</body>
+</html>
